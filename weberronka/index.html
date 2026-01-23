@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Orrialdearen karaktere-set eta ikusgaitasun ezarpenak -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Orrialdearen izena nabigatzailean -->
+    <title>ORRI NAGUSIA</title>
+    <!-- Kanpoko CSS fitxategia lotzen da -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon-a ezartzen da -->
+    <link rel="icon" href="img/AIA S.A irudiak/1.png">
+</head>
+<body>
+    <!-- Goiburua, web orrialdearen izenburua eta nabigazio menu nagusia -->
+    <header>
+        <header id="izenburua">
+        <h1>EUSKAL E-SPORTS TXAPELKETA 2025</h1>
+        <nav>
+            <!-- Nabigazio estekak -->
+            <a href="nagusia.html" id="orria"><p>ORRI NAGUSIA</p></a>
+            <a href="partehartzaileak.html"><P>PARTE HARTZAILEAK</P></a>
+            <a href="azkenberriak.html"><P>AZKEN BERRIAK</P></a>
+            <a href="sailkapena.html"><P>SAILKAPENA</P></a>
+            <a href="gamingespazioa.html"><p>GAMING ESPAZIOA</p></a>
+            <a href="formularioa.html"><p>FORMULARIOA</p></a>
+        </nav>
+        </header>
+        
+        <!-- Orrialdearen hasierako testua eta ongietorria -->
+        <section id="erdikoesaldia">
+            <h6>ONGI ETORRI AIA S.A. WEB ORRIRA</h6>
+            <p>GURE WEB ORRIA IKUSARATU, PARTE HARTU, HORI ETA ASKOS GEHIAGO ESKURAGARRI IZANGO DUZU GURE WEB ORRIAN.</p>
+            <p>TXAPELKETA-KO ENPRESA KOLABORATZAILE NAGUSIAK:</p>
+        </section>
+
+        <!-- Enpresen logoak erakusten dituen atala -->
+        <section id="enpresak">
+            <img src="img/logoak/15.png">
+            <h2> </h2>
+            <img src="img/logoak/16.png">
+        </section>
+
+        <section id="testuak">
+            <h2>INFORMAZIO GEHIGARRIA</h2>
+            <p><b>Parte-hartzeko baldintzak:</b> 18 urtetik gorakoak, online formularioa bete eta taldeko izen-ematea.</p>
+
+            <p><b>Jokoaren azalpena:</b> Lehiaketa bakoitzeko jokoaren arauak, faseak eta partida luzera.</p>
+
+            <p><b>Araudia:</b> Jokoan desleialtasunik ez egitea, jokalarien portaera errespetatzea.</p>
+
+            <p><b>Puntuazio-irizpideak:</b> Partida bakoitzeko garaipenak, frakzioak eta jokalariaren ekarpen pertsonala kontuan hartzen dira.</p>
+
+            <p><b>Sariak:</b> Diru-saria, trofeoak eta streaming bidezko estaldura profesionala.</p>
+        </section>
+    <main>
+        <div>
+            <!-- Azken berriak erakusten dituen atala -->
+            <section id="azkenberriak" class="berriak">
+                <main>
+                <header>
+                    <h3>AZKEN BERRIAK</h3>
+                    <p>Oraindik ez dira berririk atera. Berriren bat izaten dugunean, hemen ikusi ahal izango duzu ahalik eta azkarren.</p>
+                </header>
+                </main>
+            </section>
+        </div>
+
+        <div id="atalak">
+            <!-- Partehartzaileak atala -->
+            <section id="partehartzaileak" class="bordered">
+                <header>
+                    <h2>PARTE HARTZAILEAK</h2>
+                </header>
+                <main>
+                <img src="img/irudiak/casing.png">
+                <p>2025-26-eko partehartzaileak ezagutu ezazu!</p>
+                </main>
+                <button>
+                    <a href="partehartzaileak.html"><img src="img/ikonoak/image-removebg-preview.png"></a>
+                </button>
+            </section>
+
+            <!-- Sailkapena atala -->
+            <section id="sailkapena" class="bordered">
+                <header>
+                    <h2>SAILKAPENA</h2>
+                </header>
+                <main>
+                <img src="img/irudiak/sailkapeneredua.png">
+                <p>Ikusi sailkapena eta zure gustuko jokalariaren hurrengo partiduak</p>
+                </main>
+                <button>
+                    <a href="sailkapena.html"><img src="img/ikonoak/image-removebg-preview.png"></a>
+                </button>
+            </section>
+
+            <!-- Gaming espazioa atala, bideoa barne -->
+            <section id="gamingespazioa" class="bordered">
+                <header>
+                    <h2>GAMING ESPAZIOA</h2>
+                </header>
+                <main>
+                <video controls autoplay muted loop playsinline>
+                <source src="img/videoak/y2meta.net_1080p-athletic-club-san-mames.mp4" type="video/mp4">
+                </video>
+                <p>SAN MAMES izango da erabiliko dugun estadioa txapelketa eta streaming-ak egiteko.</p>
+                </main>
+                <button>
+                    <a href="gamingespazioa.html"><img src="img/ikonoak/image-removebg-preview.png"></a>
+                </button>
+            </section>
+        </div>       
+    </main>
+
+    <!-- Cookie mezuaren atal nagusia -->
+    <div id="cookies">
+    <p><i class='bx bx-cookie'></i>
+      <em>Cookie</em>-ak eta antzeko tresnak erabiltzen ditugu
+      gure webgunea hobetzeko.
+    </p>
+    <div>
+      <a id="accept" href="#">
+        <i class='bx bx-check'></i> <em>Cookie</em>-ak onartu.
+      </a>
+    </div>
+  </div>
+
+  <script>
+    // Cookie onartzeko botoia, eta mezuaren ezkutatzea klik egiterakoan
+    document.getElementById("accept").addEventListener("click", function(e) {
+      e.preventDefault(); // Evita que el enlace recargue la página
+      document.getElementById("cookies").style.display = "none"; // Oculta el aviso
+    });
+  </script>
+</body>
+
+<!-- Oinarriko ataleko sare sozialen estekak eta kokapena -->
+<footer id="saresozialak">
+    <h3>SARE SOZIALAK</h3>   
+    <a href="https://www.facebook.com"><img src="img/ikonoak/facebook-light.png" alt="Facebook Logo"></a>
+    <a href="https://www.twitter.com"><img src="img/ikonoak/x(twitter)ligth.png" alt="Twitter Logo"></a>
+    <a href="https://www.instagram.com"><img src="img/ikonoak/instagram-light.png" alt="Instagram Logo"></a>
+    <a href="https://www.youtube.com" ><img src="img/ikonoak/youtube-light.png" alt="Youtube logoa"></a>
+    <a href="https://workspace.google.com/intl/es/gmail/"><img src="img/ikonoak/mail-light.png" alt="Gmail logoa"></a>    
+    <h4>--------------------------------------------------------------------------------------------------------------</h4>
+    <h4>AURKITU EZAGUN!</h4>
+
+    <!-- Helbide eta kokapen mapa -->
+    <a href="https://www.google.com/maps/place/CIFP+Santurtzi+LHII/@43.3244928,-3.0513761,15z/data=!4m21!1m14!4m13!1m5!1m1!1s0xd4e59a20c9c8da7:0xad3dfa58b5d8e5f7!2m2!1d-3.0397241!2d43.3244933!1m6!1m2!1s0xd4e59a20c9c8da7:0xad3dfa58b5d8e5f7!2sPajares+Kalea,+34,+48980+Santurtzi,+Bizkaia!2m2!1d-3.0397241!2d43.3244933!3m5!1s0xd4e59a20c9c8da7:0xad3dfa58b5d8e5f7!8m2!3d43.3246268!4d-3.0395661!16s%2Fg%2F1td0v66j?entry=ttu&g_ep=EgoyMDI1MTAyOC4wIKXMDSoASAFQAw%3D%3D" >
+      <p>CIFP Santurtzi LHII, Pajares Kalea, 34, 48980 Santurtzi</p>
+    </a>
+</footer>
+</html>
