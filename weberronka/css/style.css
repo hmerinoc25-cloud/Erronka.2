@@ -1,17 +1,57 @@
+/* html y body — Se asegura que ocupen toda la altura de la pantalla y se usa flexbox */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+#PROIEKTUA main img,
+#GTA6 main img {
+    width: 80%; 
+    height: auto; 
+    max-width: 300px; 
+    margin: 10px auto; 
+    display: block;
+}
+#EPICGAMES main img{
+    width: 80%; 
+    height: auto; 
+    width: 100%;
+    max-width: 400px; 
+    margin: 10px auto; 
+    display: block;
+}
+body {
+    flex: 1; /* El contenido principal ocupará el espacio entre header y footer */
+}
+
+/* main — Crece para ocupar espacio disponible */
+main {
+    flex: 1;
+}
+
+#testuak img {
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+}
+
 /* BODY — Gutxieneko altuera ezartzen du, marginak kentzen ditu eta atzeko irudia gehitzen du */
 body {
     min-height: 100vh;
     margin: 0;
-    background-image: url('../img/AIA S.A irudiak/3.png');
+    background-image: url("3.png");
 }
 
 /* .bordered — Bordearekin kutxetarako estiloa, atzeko urdinarekin eta paddingarekin */
 .bordered {
     border-radius: 15px;
-    border: 2px solid #000000;
+    border: 2px solid #6a6b6b;
     margin-bottom: 25px;
     padding: 10px;
-    background-color: #0a42bb;
+    background-color: #6a6b6b;
     border-radius: 15px;
     margin-bottom: 20px;
     margin-right: 20px;
@@ -21,39 +61,23 @@ body {
 .berriak {
     margin: 5px;
     padding: 10px;
-    background-color: #0a42bb;
+    background-color: #6a6b6b;
     display: flex;
     margin: 0px;
 }
 
-/* #orria — Menu aktiboko estekarako estiloa (nav-aren parte) */
-#orria {
-    text-decoration: overline;
-    color: #2261e7;
-}
-
 /* #erdikoesaldia — Orriko testu nagusia zentratuta */
 #erdikoesaldia {
-    justify-content: center;
+    justify-content: space-evenly;
     text-align: center;
-    margin-top: 200px;
-    margin-bottom: 30px;
-}
-
-/* #erdikoesaldia p — Zentratutako blokeko paragrafoen estiloa */
-#erdikoesaldia p {
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
-    margin: 0px;
-    text-align: center;
-    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /* h6 — h6 tituluen estiloa, urdin kolorea itzalarekin */
 h6 {
-    color: #275aff;
-    text-shadow: 2px 2px 4px #0004ff;
+    color: rgb(79, 194, 240);
+    text-shadow: 2px 2px 4px #6fdcf7;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 40px;
     margin: 0;  
@@ -80,7 +104,7 @@ h6 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     text-align: center;
-    background-color: black;
+    background-color: #6a6b6b;
     margin: 0px;
     padding: 10px;
 }
@@ -97,8 +121,8 @@ h6 {
 
 /* #izenburua — Orriko header nagusia, atzeko beltza eta testua zentratuta */
 #izenburua {
-    background-color: black;
-    color: white;
+    background-color: #6a6b6b;
+    color: rgb(79, 194, 240);
     text-align: center;
     font-size: 25px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -110,7 +134,7 @@ h6 {
 #izenburua h1 {
     margin-top: 20px;
     margin-bottom: 18px;
-    text-shadow: 2px 2px 4px white;
+    text-shadow: 2px 2px 4px rgb(129, 205, 235);
 }
 
 /* #enpresak — Enpresen logoen edukiontzia, zentratuta */
@@ -123,18 +147,17 @@ h6 {
 
 /* #enpresak img — Enpresen logoak, tamaina eta bordea */
 #enpresak img {
-    width: 18%;
+    width: 20%;
     margin-top: 10px;
-    margin-bottom: 180px;
-    border: 3px solid #275aff;
+    margin-bottom: 30px;
+    border: 3px solid rgb(79, 194, 240);
     border-radius: 8px;
 }
 
 /* header nav — Nabigazio menua, flex row eta tartea */
 header nav {
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
+    justify-content: space-evenly;
     margin-top: 4px;
     margin-bottom: 2px;
     padding: 0 5px;
@@ -142,7 +165,7 @@ header nav {
 
 /* header nav a — Menuaren esteken estiloa */
 header nav a {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
@@ -150,7 +173,7 @@ header nav a {
 
 /* header nav a:hover — Menu esteken hover efektua */
 header nav a:hover {
-    color: #2261e7;
+    color: rgb(79, 194, 240);
     text-decoration: overline;
 }
 
@@ -164,7 +187,7 @@ h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     text-align: center;
-    background-color: black;
+    background-color: #6a6b6b;
     padding: 10px;
     margin: 0;
     border-radius: 15px;
@@ -175,7 +198,7 @@ h2 {
     flex-direction: column;
     text-align: center;
     margin-bottom: 30px;
-    background-color: #1316c5;
+    background-color:rgb(79, 194, 240);
     padding: 0 10px;
 }
 
@@ -202,7 +225,7 @@ h2 {
     display: flex;
     justify-content: center;
     width: 98%;
-    border: 4px solid #000000;
+    border: 4px solid #6a6b6b;
     border-radius: 20px;
     margin-top: 10px;
 } 
@@ -230,7 +253,7 @@ h2 {
     display: flex;
     justify-content: center;
     width: 98%;
-    border: 4px solid #000000;
+    border: 4px solid #6a6b6b;
     border-radius: 20px;
     margin-top: 10px;
 } 
@@ -250,21 +273,21 @@ section > button {
     margin-bottom: 10px;
     border-radius: 20px;
     padding: 5px 15px;
-    border: 2px solid black;
-    background-color: #65adff;
+    border: 2px solid #6a6b6b;
+    background-color: rgb(79, 194, 240);
 }
 
 /* section > button a — Botoien barruko esteken estiloa */
 section > button a {
     text-decoration: none;
-    color: black;
+    color: #6a6b6b;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
 }
 
 /* section > button:hover — Botoien hover efektua */
 section > button:hover {
-    background-color: rgb(0, 132, 255);
+    background-color: rgb(79, 194, 240);
     cursor: pointer;
     text-decoration: wavy;
 }
@@ -291,7 +314,7 @@ section > button img {
 /* #gamingespazioa video — Gaming edukiontziko bideoa */
 #gamingespazioa video {
     width: 98%;
-    border: 4px solid #000000;
+    border: 4px solid #6a6b6b;
     border-radius: 20px;
     margin-top: 10px;
 }
@@ -312,9 +335,9 @@ section main {
     position: fixed;
     bottom: 0px;
     left: 0px;
-    background-color: rgba(0, 38, 255, 0.612);
+    background-color: rgb(79, 194, 240);
     color: white;
-    text-shadow: 2px 2px 4px black;
+    text-shadow: 2px 2px 4px #6a6b6b;
     padding: 10px;
     width: 100%;
     border-radius: 5px;
@@ -342,13 +365,13 @@ section main {
 /* #cookies a:hover — Cookie esteken hover efektua */
 #cookies a:hover {
     background-color: rgb(0, 187, 255);
-    border-color: rgb(4, 0, 255);
+    border-color: rgb(79, 194, 240);
 }
 
 /* footer — Footer orokorraren estiloa */
 footer {
-    background-color: #000000;
-    color: white;
+    background-color: #6a6b6b;
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 15px 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -380,4 +403,27 @@ footer img:hover {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14px;
     margin-top: 10px;
+}
+
+/* .imagenes-doble — Irudiak elkarren ondoan jartzeko kontaineroa */
+.imagenes-doble {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+    padding: 0 20px;
+}
+
+/* .imagenes-doble .opari — Opari irudia tamainarekin */
+.imagenes-doble .opari {
+    width: 40%;
+    max-width: 350px;
+    height: auto;
+}
+
+/* .imagenes-doble .errorepic — Error epic irudia txikiagoa */
+.imagenes-doble .errorepic {
+    width: 30%;
+    max-width: 250px;
+    height: auto;
 }
