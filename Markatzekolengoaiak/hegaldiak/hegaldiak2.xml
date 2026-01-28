@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Aurrekoari gehitzen zaio:
+- Atributuak: 
+    - Operadorea: soilik "Vueling" edo "Iberia" karaktere-kateak
+- Elementuak:
+    - Jatorria eta helmuga: soilik "Bilbo", "Bartzelona", "Madril", "Sevilla", "Mallorca" edo "Porto" karaktere-kateak
+    - Bidaiariak: Zenbaki bat 40 eta 80 bitartean
+-->
+<hegaldiak> 
+    <hegaldia operadorea="Vueling">
+        <jatorria>Bilbo</jatorria>
+        <helmuga>Madril</helmuga>
+        <irteera>09:00:00</irteera> 
+        <iritsiera>10:00:00</iritsiera>
+        <bidaiariak>55</bidaiariak>
+    </hegaldia>
+    <hegaldia operadorea="Iberia">
+        <jatorria>Bilbo</jatorria>
+        <helmuga>Madril</helmuga>
+        <irteera>12:45:00</irteera> 
+        <iritsiera>13:45:00</iritsiera>
+        <bidaiariak>75</bidaiariak>
+    </hegaldia>
+    <hegaldia operadorea="Iberia">
+        <jatorria>Bilbo</jatorria>
+        <helmuga>Bartzelona</helmuga>
+        <irteera>08:30:00</irteera> 
+        <iritsiera>09:30:00</iritsiera>
+        <bidaiariak>50</bidaiariak>
+    </hegaldia>
+</hegaldiak>
