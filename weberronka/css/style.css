@@ -5,20 +5,31 @@ html, body {
     display: flex;
     flex-direction: column;
 }
-#PROIEKTUA main img,
+
+#PROIEKTUA main img {
+    width: 80%; 
+    height: auto; 
+    max-width: 350px; 
+    margin: 30px auto; 
+    display: block;
+    text-align: center;
+}
+
 #GTA6 main img {
     width: 80%; 
     height: auto; 
-    max-width: 300px; 
-    margin: 10px auto; 
+    max-width: 600px; 
+    margin: 30px auto; 
     display: block;
+    text-align: center;
 }
 #EPICGAMES main img{
     width: 80%; 
     height: auto; 
-    width: 100%;
-    max-width: 400px; 
-    margin: 10px auto; 
+    max-width: 600px; 
+    margin: 30px auto; 
+    display: block;
+    text-align: center; 
     display: block;
 }
 body {
@@ -42,7 +53,12 @@ main {
 body {
     min-height: 100vh;
     margin: 0;
-    background-image: url("3.png");
+    background-color:#F4F7F6;
+     background-image: url('../images/irudiak/background.png');
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+  
 }
 
 /* .bordered — Bordearekin kutxetarako estiloa, atzeko urdinarekin eta paddingarekin */
@@ -50,11 +66,14 @@ body {
     border-radius: 15px;
     border: 2px solid #6a6b6b;
     margin-bottom: 25px;
-    padding: 10px;
+    padding: 5px;
+    height: auto;
     background-color: #6a6b6b;
-    border-radius: 15px;
+    border-radius: 8px;
     margin-bottom: 20px;
-    margin-right: 20px;
+    flex: 1;
+    min-width: 0;
+
 }
 
 /* .berriak — Albisteetarako estilo orokorra, flex display eta atzeko urdina */
@@ -89,8 +108,10 @@ h6 {
     flex-direction: row;
     margin-top: 25px;
     margin-bottom: 10px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: center;
+    gap: 15px;
 }
 
 /* #azkenberriak — Azken albisteen edukiontzia, flex column */
@@ -147,10 +168,10 @@ h6 {
 
 /* #enpresak img — Enpresen logoak, tamaina eta bordea */
 #enpresak img {
-    width: 20%;
+    width: 35%;
     margin-top: 10px;
     margin-bottom: 30px;
-    border: 3px solid rgb(79, 194, 240);
+   
     border-radius: 8px;
 }
 
@@ -227,13 +248,13 @@ h2 {
     width: 98%;
     border: 4px solid #6a6b6b;
     border-radius: 20px;
-    margin-top: 10px;
+    margin-top: 10px;   
 } 
 
 /* #partehartzaileak p — Parte-hartzaileen edukiontziko paragrafoak */
 #partehartzaileak p {
     color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Inter, sans-serif;
     font-size: 16px;
     margin-top: 20px;
     text-align: center;
@@ -242,7 +263,7 @@ h2 {
 /* #sailkapena p — Sailkapeneko paragrafoak */
 #sailkapena p {
     color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Inter, sans-serif;
     font-size: 16px;
     margin-top: 20px;
     text-align: center;
@@ -250,7 +271,6 @@ h2 {
 
 /* #sailkapena main img — Sailkapeneko irudiak */
 #sailkapena main img {
-    display: flex;
     justify-content: center;
     width: 98%;
     border: 4px solid #6a6b6b;
@@ -261,7 +281,7 @@ h2 {
 /* #gamingespazioa p — Gaming sekzioko paragrafoak */
 #gamingespazioa p {
     color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Inter, sans-serif;
     font-size: 16px;
     margin-top: 10px;
     text-align: center;

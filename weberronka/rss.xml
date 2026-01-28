@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+<title>GAME STOP BERRIAK</title>
+<link>/index.html</link>
+<languaje>eu</languaje>
+<webMaster>aia@gmail.com</webMaster>
+<description>Berriak</description>
+</channel>
+
+<category>Azken Berriak</category>
+<item>
+<title>Azken Berriak</title>
+<link>/azkenberriak.html</link>
+<guid isPermalink="false">urn:uuid:be3213de-91f3-41ec-9b33-0eff414a</guid>
+<description>Azken Berriak</description>
+</item>
+     
+<category>Jasangarritasuna</category>
+<item>
+<title>A new example entry</title>
+<link>/jasangarritasuna.html</link>
+<guid isPermalink="false">urn:uuid:be3213de-91f3-41ec-9b33-0eff415a</guid>
+<description>Azken Berriak</description>
+</item>
+
+<category>Bideojokoak</category>
+<item>
+<title>A new example entry</title>
+<link>/bideojokoak.html</link>
+<guid isPermalink="false">urn:uuid:be3213de-91f3-41ec-9b33-0eff416a</guid>
+<description>Azken Berriak</description>
+</item>
+
+</rss>
+  
