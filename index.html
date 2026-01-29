@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Orrialdearen karaktere-set eta ikusgaitasun ezarpenak -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Orrialdearen izena nabigatzailean -->
+    <title>ORRI NAGUSIA</title>
+    <!-- Kanpoko CSS fitxategia lotzen da -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon-a ezartzen da -->
+    <link rel="icon" href="images/AIA S.A irudiak/gamestop.png">
+</head>
+<body>
+    <!-- Goiburua, web orrialdearen izenburua eta nabigazio menu nagusia -->
+    <header>
+        <header id="izenburua">
+        <h1>EUSKAL BERRIAK 2026</h1>
+        <nav>
+            <!-- Nabigazio estekak -->
+            <a href="azkenberriak.html" id="orria"><p>Azken berriak</p></a>
+            <a href="jasangarritasuna.html"><P>Jasangarritasuna</P></a>
+            <a href="bideojokooak.html"><P>Bideojokoak</P></a>
+        </nav>
+        </header>
+        
+        <!-- Orrialdearen hasierako testua eta ongietorria -->
+        <section id="erdikoesaldia">
+            <h6>ONGI ETORRI TXAPELKETAREN BERRI-ORRIALDERA</h6>
+        </section>
+
+        <!-- Enpresen logoak erakusten dituen atala -->
+        <section id="enpresak">
+            <img src="images/AIA S.A irudiak/gamestop.png">
+        </section>
+
+    <main>
+        <div>
+            <!-- Azken berriak erakusten dituen atala -->
+            <section id="azkenberriak" class="berriak">
+                <main>
+                <header>
+                    <h3>AZKEN BERRIAK</h3>
+                </header>
+                </main>
+            </section>
+        </div>
+
+        <div id="atalak">
+            <!-- Partehartzaileak atala -->
+            <section id="EPICGAMES" class="bordered">
+                <header>
+                    <h2>Epic Games-en zerbitzariak erorita: 24 ordu joko gabe</h2>
+                </header>
+                <main>
+                <p style="font-family: Inter, sans-serif; color: white; text-align: center;">AIA S.A. abiarazten du proiektu teknologiko berria Santurtzin, jasangarritasuna eta berrikuntza sustatzeko.</p>
+                <img src="images/irudiak/servidores.png">
+                </main>
+                <button>
+                    <a href="azkenberriak.html"><img src="images/ikonoak/image-removebg-preview.png"></a>
+                </button>
+            </section>
+
+            <!-- Sailkapena atala -->
+             <section id="PROIEKTUA" class="bordered">
+                <header>
+                    <h2>PROIEKTU TEKNOLOGIKO BERRIA SANTURTZIN</h2>
+                </header>
+                <main>
+                    <p style="font-family: Inter, sans-serif; color: white; text-align: center;">AIA S.A. abiarazten du proiektu teknologiko berria Santurtzin, jasangarritasuna eta berrikuntza sustatzeko.</p>
+                <img src="images/irudiak/agenda.png">
+                </main>
+                <button>
+                    <a href="jasangarritasuna.html"><img src="images/ikonoak/image-removebg-preview.png"></a>
+                </button>
+            </section>
+
+            <!-- Gaming espazioa atala, bideoa barne -->
+            <section id="GTA6" class="bordered">
+                <header>
+                    <h2>GTA 6ren garapena normaltasunera itzuli da Rockstarren bulegoetan</h2>
+                </header>
+                <main>
+                <p style="font-family: Inter, sans-serif; color: white; text-align: center;">Rockstar Northen bulegoetan gertatutako gorabehera baten ondoren, estudioak normaltasunez funtzionatzen du eta GTA 6-n lanean jarraitzen du.</p>
+                <img src="images/irudiak/rockstar.jpg" style="display: block; margin: 20px auto;">
+            </main>
+                <button>
+                    <a href="bideojokoak.html"><img src="images/ikonoak/image-removebg-preview.png"></a>
+                </button>
+            </section>
+        </div>       
+    </main>
+
+    <!-- Cookie mezuaren atal nagusia -->
+    <div id="cookies">
+    <p><i class='bx bx-cookie'></i>
+      <em>Cookie</em>-ak eta antzeko tresnak erabiltzen ditugu
+      gure webgunea hobetzeko.
+    </p>
+    <div>
+      <a id="accept" href="#">
+        <i class='bx bx-check'></i> <em>Cookie</em>-ak onartu.
+      </a>
+    </div>
+  </div>
+
+  <script>
+    // Cookie onartzeko botoia, eta mezuaren ezkutatzea klik egiterakoan
+    document.getElementById("accept").addEventListener("click", function(e) {
+      e.preventDefault(); // Evita que el enlace recargue la página
+      document.getElementById("cookies").style.display = "none"; // Oculta el aviso
+    });
+  </script>
+</body>
+
+<!-- Oinarriko ataleko sare sozialen estekak eta kokapena -->
+<footer id="saresozialak">
+    <h3>SARE SOZIALAK</h3>   
+    <a href="https://www.facebook.com"><img src="images/ikonoak/facebook-light.png" alt="Facebook Logo"></a>
+    <a href="https://www.twitter.com"><img src="images/ikonoak/twitter-light.png" alt="Twitter Logo"></a>
+    <a href="https://www.instagram.com"><img src="images/ikonoak/instagram-light.png" alt="Instagram Logo"></a>
+    <a href="https://www.youtube.com" ><img src="images/ikonoak/youtube-light.png" alt="Youtube logoa"></a>
+    <a href="https://workspace.google.com/intl/es/gmail/"><img src="images/ikonoak/mail-light.png" alt="Gmail logoa"></a>    
+    <h4>--------------------------------------------------------------------------------------------------------------</h4>
+    <h4>AURKITU EZAGUN!</h4>
+
+    <!-- Helbide eta kokapen mapa -->
+    <a href="https://www.google.com/maps/place/CIFP+Santurtzi+LHII/@43.3244928,-3.0513761,15z/data=!4m21!1m14!4m13!1m5!1m1!1s0xd4e59a20c9c8da7:0xad3dfa58b5d8e5f7!2m2!1d-3.0397241!2d43.3244933!1m6!1m2!1s0xd4e59a20c9c8da7:0xad3dfa58b5d8e5f7!2sPajares+Kalea,+34,+48980+Santurtzi,+Bizkaia!2m2!1d-3.0397241!2d43.3244933!3m5!1s0xd4e59a20c9c8da7:0xad3dfa58b5d8e5f7!8m2!3d43.3246268!4d-3.0395661!16s%2Fg%2F1td0v66j?entry=ttu&g_ep=EgoyMDI1MTAyOC4wIKXMDSoASAFQAw%3D%3D" >
+      <p>CIFP Santurtzi LHII, Pajares Kalea, 34, 48980 Santurtzi</p>
+    </a>
+</footer>
+</html>
