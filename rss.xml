@@ -1,36 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
-<channel>
-<title>GAME STOP BERRIAK</title>
-<link>/index.html</link>
-<languaje>eu</languaje>
-<webMaster>aia@gmail.com</webMaster>
-<description>Berriak</description>
-</channel>
+  <channel>
+    <title>GAME STOP BERRIAK</title>
+    <link>https://hmerinoc25-cloud.github.io/Erronka.2/index.html</link>
+    <description>Berriak</description>
+    <language>eu</language>
+    <webMaster>aia@gmail.com</webMaster>
 
-<category>Azken Berriak</category>
-<item>
-<title>Azken Berriak</title>
-<link>/azkenberriak.html</link>
-<guid isPermalink="false">urn:uuid:be3213de-91f3-41ec-9b33-0eff414a</guid>
-<description>Azken Berriak</description>
-</item>
+    <item>
+      <title>Azken Berriak</title>
+      <link>https://hmerinoc25-cloud.github.io/Erronka.2/azkenberriak.html</link>
+      <description>Azken Berriak</description>
+      <category>Azken Berriak</category>
+      <guid isPermaLink="false">urn:uuid:be3213de-91f3-41ec-9b33-0eff414a</guid>
+    </item>
      
-<category>Jasangarritasuna</category>
-<item>
-<title>A new example entry</title>
-<link>/jasangarritasuna.html</link>
-<guid isPermalink="false">urn:uuid:be3213de-91f3-41ec-9b33-0eff415a</guid>
-<description>Azken Berriak</description>
-</item>
+    <item>
+      <title>Jasangarritasuna Berria</title>
+      <link>https://hmerinoc25-cloud.github.io/Erronka.2/jasangarritasuna.html</link>
+      <description>Azken Berriak</description>
+      <category>Jasangarritasuna</category>
+      <guid isPermaLink="false">urn:uuid:be3213de-91f3-41ec-9b33-0eff415a</guid>
+    </item>
 
-<category>Bideojokoak</category>
-<item>
-<title>A new example entry</title>
-<link>/bideojokoak.html</link>
-<guid isPermalink="false">urn:uuid:be3213de-91f3-41ec-9b33-0eff416a</guid>
-<description>Azken Berriak</description>
-</item>
+    <item>
+      <title>Bideojokoak Berria</title>
+      <link>https://hmerinoc25-cloud.github.io/Erronka.2/bideojokoak.html</link>
+      <description>Azken Berriak</description>
+      <category>Bideojokoak</category>
+      <guid isPermaLink="false">urn:uuid:be3213de-91f3-41ec-9b33-0eff416a</guid>
+    </item>
 
+  </channel>
 </rss>
-  
