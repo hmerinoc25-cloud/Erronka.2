@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>GAME STOP BERRIAK</title>
     <link>https://hmerinoc25-cloud.github.io/Erronka.2/index.html</link>
     <description>Berriak</description>
     <language>eu</language>
-    <webMaster>hmerinoc25@fpsanturtzilh.eus</webMaster>
+    <webMaster>hmerinoc25@fpsanturtzilh.eus (Hugo Merino)</webMaster>
+    <atom:link href="https://raw.githubusercontent.com/hmerinoc25-cloud/Erronka.2/refs/heads/main/rss.xml" rel="self" type="application/rss+xml" />
 
     <item>
       <title>Azken Berriak</title>
