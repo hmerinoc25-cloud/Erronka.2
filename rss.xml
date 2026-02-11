@@ -1,36 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>GAME STOP BERRIAK</title>
+    <title>TXAPELKETAKO ALBISTEAK 2026</title>
     <link>https://hmerinoc25-cloud.github.io/Erronka.2/index.html</link>
-    <description>Berriak</description>
+    <description>Gaming eta teknologia berriak Santurtzin</description>
     <language>eu</language>
     <webMaster>hmerinoc25@fpsanturtzilh.eus (Hugo Merino)</webMaster>
     <atom:link href="https://raw.githubusercontent.com/hmerinoc25-cloud/Erronka.2/refs/heads/main/rss.xml" rel="self" type="application/rss+xml" />
 
     <item>
-      <title>Azken Berriak</title>
+      <title>Epic Games-en zerbitzariak erorita: 24 ordu joko gabe</title>
       <link>https://hmerinoc25-cloud.github.io/Erronka.2/azkenberriak.html</link>
-      <description>Azken Berriak</description>
-      <category>Azken Berriak</category>
-      <guid isPermaLink="false">urn:uuid:be3213de-91f3-41ec-9b33-0eff414a</guid>
+      <description>Fortnite eta Rocket League mundu osoan itzali dira arazo tekniko baten ondorioz.</description>
+      <guid isPermaLink="false">epic-games-2026-01-26</guid>
+      <pubDate>Mon, 26 Jan 2026 10:00:00 +0100</pubDate>
     </item>
-     
+
     <item>
-      <title>Jasangarritasuna Berria</title>
+      <title>Proiektu teknologiko berria Santurtzin - AIA S.A.</title>
       <link>https://hmerinoc25-cloud.github.io/Erronka.2/jasangarritasuna.html</link>
-      <description>Azken Berriak</description>
-      <category>Jasangarritasuna</category>
-      <guid isPermaLink="false">urn:uuid:be3213de-91f3-41ec-9b33-0eff415a</guid>
+      <description>AIA S.A.-k berrikuntza jasangarria bultzatuko du tokiko industrian.</description>
+      <guid isPermaLink="false">santurtzi-aia-2026-01-26</guid>
+      <pubDate>Mon, 26 Jan 2026 09:00:00 +0100</pubDate>
     </item>
 
     <item>
-      <title>Bideojokoak Berria</title>
+      <title>GTA 6-ren garapena normaltasunera itzuli da</title>
       <link>https://hmerinoc25-cloud.github.io/Erronka.2/bideojokoak.html</link>
-      <description>Azken Berriak</description>
-      <category>Bideojokoak</category>
-      <guid isPermaLink="false">urn:uuid:be3213de-91f3-41ec-9b33-0eff416a</guid>
+      <description>Rockstar Northen bulegoek martxan jarraitzen dute galdara baten gorabeheraren ostean.</description>
+      <guid isPermaLink="false">gta6-rockstar-2026-01-20</guid>
+      <pubDate>Tue, 20 Jan 2026 12:00:00 +0100</pubDate>
     </item>
-
   </channel>
 </rss>
