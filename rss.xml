@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>TXAPELKETAKO ALBISTEAK 2026</title>
+    <title>GAME STOP BERRIAK</title>
     <link>https://hmerinoc25-cloud.github.io/Erronka.2/index.html</link>
-    <description>Gaming eta teknologia berriak Santurtzin</description>
+    <description>Gaming munduko berrikuntzak eta Santurtziko albiste teknologikoak.</description>
     <language>eu</language>
     <atom:link href="https://hmerinoc25-cloud.github.io/Erronka.2/rss.xml" rel="self" type="application/rss+xml" />
 
@@ -11,16 +11,24 @@
       <title>Epic Games-en zerbitzariak erorita: 24 ordu joko gabe</title>
       <link>https://hmerinoc25-cloud.github.io/Erronka.2/azkenberriak.html</link>
       <description>Fortnite eta Rocket League mundu osoan itzali dira arazo tekniko baten ondorioz.</description>
-      <pubDate>Mon, 26 Jan 2026 10:00:00 +0100</pubDate>
-      <guid isPermaLink="false">noticia-epic-2026</guid>
+      <pubDate>Wed, 11 Feb 2026 12:15:00 +0100</pubDate>
+      <guid isPermaLink="false">noticia-epic-gamestop-v7</guid>
     </item>
 
     <item>
       <title>Proiektu teknologiko berria Santurtzin - AIA S.A.</title>
       <link>https://hmerinoc25-cloud.github.io/Erronka.2/jasangarritasuna.html</link>
-      <description>AIA S.A.-k berrikuntza jasangarria bultzatuko du tokiko industrian.</description>
-      <pubDate>Mon, 26 Jan 2026 09:00:00 +0100</pubDate>
-      <guid isPermaLink="false">noticia-aia-2026</guid>
+      <description>AIA S.A. enpresak berrikuntza jasangarria bultzatuko du gure herrian.</description>
+      <pubDate>Wed, 11 Feb 2026 12:10:00 +0100</pubDate>
+      <guid isPermaLink="false">noticia-aia-gamestop-v7</guid>
+    </item>
+
+    <item>
+      <title>GTA 6-ren garapena normaltasunera itzuli da</title>
+      <link>https://hmerinoc25-cloud.github.io/Erronka.2/bideojokoak.html</link>
+      <description>Rockstar Northen bulegoak martxan daude berriro istripu txiki baten ostean.</description>
+      <pubDate>Wed, 11 Feb 2026 12:05:00 +0100</pubDate>
+      <guid isPermaLink="false">noticia-gta6-gamestop-v7</guid>
     </item>
   </channel>
 </rss>
