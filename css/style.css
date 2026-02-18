@@ -1,4 +1,4 @@
-/* html y body — Se asegura que ocupen toda la altura de la pantalla y se usa flexbox */
+/* html eta body — Pantailaren altuera osoa okupatzeko eta flexbox erabiltzeko */
 html, body {
     height: 100%;
     margin: 0;
@@ -6,8 +6,64 @@ html, body {
     flex-direction: column;
 }
 
+/* Bideojokoak eta Jasangarritasuna irudien estiloa */
+.img-noticia-normal {
+    display: block;
+    margin: 30px auto;      
+    max-width: 600px;        
+    height: auto;     
+    border: 3px solid #6a6b6b; 
+    border-radius: 15px;     
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease; 
+}
 
+/* Hover efektua irudietan */
+.img-noticia-normal:hover {
+    transform: scale(1.02);  
+}
 
+/* --- AZKEN BERRIAK IRUDIEN ESTILOA --- */
+.imagenes-doble {
+    display: flex;
+    justify-content: center; 
+    gap: 10px;               
+    margin: 10px 0;
+    flex-wrap: wrap;          
+}
+
+/* Irudiaren edukiontzia 400x450 neurriarekin */
+.img-wrapper-noticia {
+    width: 400px;
+    height: 450px;
+    background-color: #ffffff; 
+    border: 3px solid #6a6b6b; 
+    border-radius: 15px;      
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    overflow: hidden;      
+}
+
+/* Irudiaren tamaina edukiontzian */
+.img-wrapper-noticia img {
+    max-width: 110%;        
+    max-height:115%;      
+    width: auto;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease; 
+}
+
+/* Hover efektua edukiontziko irudietan */
+.img-wrapper-noticia img:hover {
+    transform: scale(1.1); 
+    cursor: pointer;   
+}
+
+/* Proiektua irudi nagusiak */
 #PROIEKTUA main img {
     width: 80%; 
     height: auto; 
@@ -17,6 +73,7 @@ html, body {
     text-align: center;
 }
 
+/* GTA6 irudi nagusiak */
 #GTA6 main img {
     width: 80%; 
     height: auto; 
@@ -25,6 +82,8 @@ html, body {
     display: block;
     text-align: center;
 }
+
+/* Epic Games irudi nagusiak */
 #EPICGAMES main img{
     width: 80%; 
     height: auto; 
@@ -34,15 +93,18 @@ html, body {
     text-align: center; 
     display: block;
 }
+
+/* body — Eduki nagusiak header eta footer artean espazioa hartzeko */
 body {
-    flex: 1; /* El contenido principal ocupará el espacio entre header y footer */
+    flex: 1; 
 }
 
-/* main — Crece para ocupar espacio disponible */
+/* main — Eduki nagusia handitu behar denean */
 main {
     flex: 1;
 }
 
+/* testuak id-arekin dauden irudien estilo orokorra */
 #testuak img {
     width: 80%;
     max-width: 600px;
@@ -51,19 +113,18 @@ main {
     display: block;
 }
 
-/* BODY — Gutxieneko altuera ezartzen du, marginak kentzen ditu eta atzeko irudia gehitzen du */
+/* BODY — Gutxieneko altuera, marginak kendu eta atzeko irudia */
 body {
     min-height: 100vh;
     margin: 0;
     background-color:#F4F7F6;
-     background-image: url('../images/irudiak/background.png');
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-position: center;
-  
+    background-image: url('../images/irudiak/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-/* .bordered — Bordearekin kutxetarako estiloa, atzeko urdinarekin eta paddingarekin */
+/* .bordered — Kutxa estiloa, bordea, atzeko urdina eta padding */
 .bordered {
     border-radius: 15px;
     border: 2px solid #6a6b6b;
@@ -75,10 +136,9 @@ body {
     margin-bottom: 20px;
     flex: 1;
     min-width: 0;
-
 }
 
-/* .berriak — Albisteetarako estilo orokorra, flex display eta atzeko urdina */
+/* .berriak — Albisteetarako estilo orokorra, flex eta atzeko kolorea */
 .berriak {
     margin: 5px;
     padding: 10px;
@@ -87,7 +147,7 @@ body {
     margin: 0px;
 }
 
-/* #erdikoesaldia — Orriko testu nagusia zentratuta */
+/* #erdikoesaldia — Orriko testua zentratuta */
 #erdikoesaldia {
     justify-content: space-evenly;
     text-align: center;
@@ -95,7 +155,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* h6 — h6 tituluen estiloa, urdin kolorea itzalarekin */
+/* h6 — H6 titulua, kolore urdina eta itzala */
 h6 {
     color: rgb(79, 194, 240);
     text-shadow: 2px 2px 4px #6fdcf7;
@@ -104,7 +164,7 @@ h6 {
     margin: 0;  
 }
 
-/* #atalak — Sekzioen edukiontzia, flex row eta marginak */
+/* #atalak — Sekzioen edukiontzia, flex lerroa eta tartea */
 #atalak {
     display: flex;
     flex-direction: row;
@@ -116,13 +176,13 @@ h6 {
     gap: 15px;
 }
 
-/* #azkenberriak — Azken albisteen edukiontzia, flex column */
+/* #azkenberriak — Azken albisteen edukiontzia */
 #azkenberriak {
     position: relative;
     flex-direction: column;
 }
 
-/* #azkenberriak h3 — Azken albisteen titulua, zentratuta eta atzeko beltza */
+/* #azkenberriak h3 — Tituluak zentratuta eta atzeko kolore beltza */
 #azkenberriak h3 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
@@ -132,7 +192,7 @@ h6 {
     padding: 10px;
 }
 
-/* #azkenberriak p — Azken albisteetako paragrafoak */
+/* #azkenberriak p — Paragrafoak */
 #azkenberriak p {
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -142,7 +202,7 @@ h6 {
     padding: 10px;
 }
 
-/* #izenburua — Orriko header nagusia, atzeko beltza eta testua zentratuta */
+/* #izenburua — Orriko header nagusia */
 #izenburua {
     background-color: #6a6b6b;
     color: rgb(79, 194, 240);
@@ -160,7 +220,7 @@ h6 {
     text-shadow: 2px 2px 4px rgb(129, 205, 235);
 }
 
-/* #enpresak — Enpresen logoen edukiontzia, zentratuta */
+/* #enpresak — Enpresen logoen edukiontzia */
 #enpresak {
     flex-direction: row;
     align-items: center;
@@ -168,16 +228,15 @@ h6 {
     margin-bottom: 0px;
 }
 
-/* #enpresak img — Enpresen logoak, tamaina eta bordea */
+/* #enpresak img — Logoen tamaina eta bordea */
 #enpresak img {
     width: 35%;
     margin-top: 10px;
     margin-bottom: 30px;
-   
     border-radius: 8px;
 }
 
-/* header nav — Nabigazio menua, flex row eta tartea */
+/* header nav — Nabigazio menuaren estiloa */
 header nav {
     display: flex;
     justify-content: space-evenly;
@@ -186,7 +245,7 @@ header nav {
     padding: 0 5px;
 }
 
-/* header nav a — Menuaren esteken estiloa */
+/* header nav a — Menu esteken estiloa */
 header nav a {
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -205,7 +264,7 @@ header b {
     color: lightskyblue;
 }
 
-/* h2 — Sekzioetako h2 tituluen estiloa, atzeko beltza eta zentratua */
+/* h2 — Sekzioetako h2 tituluen estiloa */
 h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
@@ -216,6 +275,7 @@ h2 {
     border-radius: 15px;
 }
 
+/* #testuak — Eduki nagusiaren edukiontzia, testua zentratuta */
 #testuak {
     display: flex;
     flex-direction: column;
@@ -225,12 +285,14 @@ h2 {
     padding: 0 10px;
 }
 
+/* #testuak b — Testu lodizkolorua */
 #testuak b {
     color: aqua;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 25px;
 }
 
+/* #testuak p — Paragrafoen kolorea eta letra estiloa */
 #testuak p {
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -243,7 +305,7 @@ h2 {
     margin: 5px;
 }
 
-/* #partehartzaileak main img — Parte-hartzaileen barruko irudia */
+/* #partehartzaileak main img — Parte-hartzaileen irudia */
 #partehartzaileak main img {
     display: flex;
     justify-content: center;
@@ -253,7 +315,7 @@ h2 {
     margin-top: 10px;   
 } 
 
-/* #partehartzaileak p — Parte-hartzaileen edukiontziko paragrafoak */
+/* #partehartzaileak p — Parte-hartzaileen paragrafoak */
 #partehartzaileak p {
     color: white;
     font-family: Inter, sans-serif;
@@ -280,7 +342,7 @@ h2 {
     margin-top: 10px;
 } 
 
-/* #gamingespazioa p — Gaming sekzioko paragrafoak */
+/* #gamingespazioa p — Gaming edukiontziko paragrafoak */
 #gamingespazioa p {
     color: white;
     font-family: Inter, sans-serif;
@@ -289,7 +351,7 @@ h2 {
     text-align: center;
 }
 
-/* section > button — Botoi orokorren estiloa */
+/* section > button — Botoi orokorrak */
 section > button {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -299,7 +361,7 @@ section > button {
     background-color: rgb(79, 194, 240);
 }
 
-/* section > button a — Botoien barruko esteken estiloa */
+/* section > button a — Botoien barruko estekak */
 section > button a {
     text-decoration: none;
     color: #6a6b6b;
@@ -307,7 +369,7 @@ section > button a {
     font-size: 16px;
 }
 
-/* section > button:hover — Botoien hover efektua */
+/* section > button:hover — Hover efektua botoietan */
 section > button:hover {
     background-color: rgb(79, 194, 240);
     cursor: pointer;
@@ -333,7 +395,7 @@ section > button img {
     margin: 5px;
 }
 
-/* #gamingespazioa video — Gaming edukiontziko bideoa */
+/* #gamingespazioa video — Gaming bideoak */
 #gamingespazioa video {
     width: 98%;
     border: 4px solid #6a6b6b;
@@ -341,18 +403,18 @@ section > button img {
     margin-top: 10px;
 }
 
-/* section — Sekzioen edukiontzi orokorrak */
+/* section — Sekzio orokorrak */
 section {
     display: flex;
     flex-direction: column;
 }
 
-/* section main — Sekzio barruko edukiontzi nagusia */
+/* section main — Sekzio barruko edukiontzia */
 section main {
     flex: 1;
 }
 
-/* #cookies — Cookieen bannerra */
+/* #cookies — Cookie bannerra beheko aldean */
 #cookies {
     position: fixed;
     bottom: 0px;
@@ -368,7 +430,7 @@ section main {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* #cookies > div — Cookie banner barruko botoien edukiontzia */
+/* #cookies > div — Cookie botoien edukiontzia */
 #cookies > div {
     display: flex;
     justify-content: center;
@@ -384,13 +446,13 @@ section main {
     text-decoration: none;
 }
 
-/* #cookies a:hover — Cookie esteken hover efektua */
+/* #cookies a:hover — Hover efektua cookie esteken gainean */
 #cookies a:hover {
     background-color: rgb(0, 187, 255);
     border-color: rgb(79, 194, 240);
 }
 
-/* footer — Footer orokorraren estiloa */
+/* footer — Footer nagusiaren estiloa */
 footer {
     background-color: #6a6b6b;
     color: rgb(255, 255, 255);
@@ -406,20 +468,20 @@ footer h3 {
     font-size: 20px;
 }
 
-/* footer img — Sare sozialen ikonoak */
+/* footer img — Sare sozialetako ikonoak */
 footer img {
     width: 30px;
     height: auto;
     margin: 0 10px;
 }
 
-/* footer img:hover — Footer ikonoen hover efektua */
+/* footer img:hover — Hover efektua ikonoetan */
 footer img:hover {
     transform: scale(1.5);
     transition: transform 0.7s;
 }
 
-/* #saresozialak p — Sare sozialen footer barruko paragrafoak */
+/* #saresozialak p — Sare sozialetako paragrafoak footerrean */
 #saresozialak p {
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -427,7 +489,7 @@ footer img:hover {
     margin-top: 10px;
 }
 
-/* .imagenes-doble — Irudiak elkarren ondoan jartzeko kontaineroa */
+/* .imagenes-doble — Irudiak alboan jartzeko edukiontzia */
 .imagenes-doble {
     display: flex;
     justify-content: space-around;
@@ -436,14 +498,14 @@ footer img:hover {
     padding: 0 20px;
 }
 
-/* .imagenes-doble .opari — Opari irudia tamainarekin */
+/* .imagenes-doble .opari — Opari irudiaren tamaina */
 .imagenes-doble .opari {
     width: 40%;
     max-width: 350px;
     height: auto;
 }
 
-/* .imagenes-doble .errorepic — Error epic irudia txikiagoa */
+/* .imagenes-doble .errorepic — Error Epic irudia txikiagoa */
 .imagenes-doble .errorepic {
     width: 30%;
     max-width: 250px;
