@@ -1,59 +1,153 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- XML dokumentuaren definizioa eta kodeketa -->
+
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <!-- XML Schema espazioa definitzen da -->
 
-  <xs:element name="Langileak">
-    <xs:complexType>
-      <xs:choice maxOccurs="unbounded">
-        <xs:element name="Bulegaria" type="tipoBulegaria"/>
-        <xs:element name="Saltzaileak" type="tipoSaltzaile"/>
-      </xs:choice>
+  <xs:element name="Langileak" type="Tlangileak"/> 
+  <!-- Dokumentuaren erro-elementua. Langile guztien zerrenda edukiko du -->
+
+ <xs:complexType name="Tlangileak">
+    <!-- Langile multzoaren egitura definitzen da -->
+    <xs:choice maxOccurs="unbounded">
+        <!-- Hiru langile mota egon daitezke eta nahi adina errepikatu daitezke -->
+        
+        <xs:element name="Langilea" type="TLangilea" minOccurs="0"/>
+        <!-- Oinarrizko langilea, aukerazkoa -->
+
+        <xs:element name="Saltzaileak" type="TSaltzailea"/>
+        <!-- Saltzaile motako langilea -->
+
+        <xs:element name="Bulegaria" type="TBulegaria"/>
+        <!-- Bulegoko langilea -->
+    </xs:choice>
+</xs:complexType>
+
+    <xs:complexType name="TLangilea">
+        <!-- Langile orokor baten oinarrizko egitura -->
+        <xs:sequence>
+            <!-- Elementuak orden honetan agertu behar dira -->
+            
+            <xs:element name="Izena" type="Tizena"/>
+            <!-- Langilearen izena (gehienez 255 karaktere) -->
+
+             <xs:element name="Abizena" type="Tabizena"/>
+             <!-- Langilearen abizena -->
+
+             <xs:element name="Emaila" type="Temaila"/>
+             <!-- Email helbidea, patroiarekin balidatua -->
+
+             <xs:element name="Telefonoa" type="Ttelefonoa"/>
+             <!-- Telefono zenbakia, 000.000.0000 formatua -->
+
+             <xs:element name="Data" type="xs:string"/>
+             <!-- Data, testu moduan gordeta -->
+
+             <xs:element name="Nagusia" type="TNagusia"/>
+             <!-- Langilearen nagusiaren informazioa -->
+        </xs:sequence>
+
+        <xs:attribute name="id" type="TID" use="required"/>
+        <!-- Langilearen IDa, derrigorrezkoa eta zenbakizkoa -->
     </xs:complexType>
-  </xs:element>
 
-  <xs:complexType name="tipoBulegaria">
-    <xs:sequence>
-      <xs:element name="Izena" type="xs:string"/>
-      <xs:element name="Abizena" type="xs:string"/>
-      <xs:element name="Emaila" type="xs:string"/>
-      <xs:element name="Telefonoa" type="xs:string"/>
-      <xs:element name="Data" type="xs:string"/>
-      <xs:element name="Nagusia">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element name="IzenAbizena" type="xs:string"/>
-          </xs:sequence>
-          <xs:attribute name="nagusiID" type="xs:string"/>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="LanpostuDeskribapen" type="xs:string"/>
-      <xs:element name="Lanpostua">
-        <xs:complexType>
-          <xs:attribute name="idLanpostu" type="xs:integer" use="required"/>
-        </xs:complexType>
-      </xs:element>
-    </xs:sequence>
-    <xs:attribute name="id" type="xs:integer" use="required"/>
-  </xs:complexType>
 
-  <xs:complexType name="tipoSaltzaile">
-    <xs:sequence>
-      <xs:element name="Izena" type="xs:string"/>
-      <xs:element name="Abizena" type="xs:string"/>
-      <xs:element name="Emaila" type="xs:string"/>
-      <xs:element name="Telefonoa" type="xs:string"/>
-      <xs:element name="Data" type="xs:string"/>
-      <xs:element name="Nagusia">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element name="IzenAbizena" type="xs:string"/>
-          </xs:sequence>
-          <xs:attribute name="nagusiID" type="xs:string"/>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="Erabiltzaile" type="xs:string"/>
-      <xs:element name="Pasahitza" type="xs:string"/>
-    </xs:sequence>
-    <xs:attribute name="id" type="xs:integer" use="required"/>
+  <xs:complexType name="TBulegaria">
+    <!-- Bulegoko langile mota -->
+    <xs:complexContent>
+      <xs:extension base="TLangilea">
+        <!-- TLangilea-tik heredatzen du (oinarrizko datuak + berriak) -->
+        <xs:sequence>
+          <xs:element name="LanpostuDeskribapen" type="xs:string"/>
+          <!-- Lanpostuaren deskribapena -->
+
+          <xs:element name="Lanpostua">
+            <!-- Lanpostuaren informazioa atributu bidez -->
+            <xs:complexType>
+              <xs:attribute name="idLanpostu" type="TID" use="required"/>
+              <!-- Lanpostuaren identifikatzailea -->
+            </xs:complexType>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
   </xs:complexType>
+  
+  <xs:complexType name="TSaltzailea">
+    <!-- Saltzaile mota -->
+    <xs:complexContent>
+      <xs:extension base="TLangilea">
+        <!-- TLangilea-tik heredatzen du -->
+        <xs:sequence>
+          <xs:element name="Erabiltzaile" type="xs:string"/>
+          <!-- Erabiltzaile izena -->
+
+          <xs:element name="Pasahitza" type="xs:string"/>
+          <!-- Pasahitza -->
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+   
+  <xs:simpleType name="Tlanpostuid">
+      <!-- Lanpostu ID motaren definizioa -->
+      <xs:restriction base="xs:ID">
+          <xs:pattern value="[0-9]"></xs:pattern>
+          <!-- Zenbaki bakarra onartzen du -->
+      </xs:restriction>
+  </xs:simpleType>
+  
+   <xs:simpleType name="Tizena">
+        <!-- Izena motaren murrizketa -->
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="255"/>
+            <!-- Gehienez 255 karaktere -->
+        </xs:restriction>
+    </xs:simpleType>
+
+      <xs:simpleType name="Tabizena">
+        <!-- Abizena motaren murrizketa -->
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="255"/>
+            <!-- Gehienez 255 karaktere -->
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="TID">
+        <!-- ID motaren definizioa -->
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]+"></xs:pattern>
+            <!-- Zenbaki bat edo gehiago -->
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="Temaila">
+        <!-- Email formatuaren balidazioa -->
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-zA-Z0-9./*_-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"/>
+            <!-- Email egitura zehatz bat bete behar du -->
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="Ttelefonoa">
+        <!-- Telefono formatuaren balidazioa -->
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{3}.[0-9]{3}.[0-9]{4}"/>
+            <!-- 3 digitu . 3 digitu . 4 digitu -->
+        </xs:restriction>
+    </xs:simpleType>
+
+
+    <xs:complexType name="TNagusia">
+        <!-- Nagusiaren informazioa -->
+        <xs:sequence>
+            <xs:element name="IzenAbizena" type="xs:string"/>
+            <!-- Nagusiaren izen-abizenak -->
+        </xs:sequence>
+
+        <xs:attribute name="nagusiID" type="TID" use="required"/>
+        <!-- Nagusiaren IDa -->
+    </xs:complexType>
 
 </xs:schema>
+<!-- XSD-ren amaiera -->

@@ -1,32 +1,62 @@
-
+<!-- Langileak — Langileen edukiontzia, Bulegariak eta Saltzaileak biltzen ditu -->
 <!ELEMENT Langileak (Bulegaria*, Saltzaileak*)>
+
+<!-- Langileak atributuak — XML namespace eta schema kokapena -->
 <!ATTLIST Langileak
           xmlns:xsi CDATA #IMPLIED
-          xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
+          xsi:noNamespaceSchemaLocation CDATA #IMPLIED> <!-- Schema fitxategiaren kokapena -->
 
+<!-- Bulegaria — Bulegari baten informazioa -->
 <!ELEMENT Bulegaria (Izena, Abizena, Emaila, Telefonoa, Data, Nagusia, LanpostuDeskribapen, Lanpostua)>
+
+<!-- Bulegaria atributuak -->
 <!ATTLIST Bulegaria
-          id CDATA #REQUIRED>
+          id CDATA #REQUIRED>               <!-- Bulegari bakoitzaren identifikatzaile bakarra -->
 
+<!-- Saltzaileak — Saltzaile baten informazioa -->
 <!ELEMENT Saltzaileak (Izena, Abizena, Emaila, Telefonoa, Data, Nagusia, Erabiltzaile, Pasahitza)>
-<!ATTLIST Saltzaileak
-          id CDATA #REQUIRED>
 
+<!-- Saltzaileak atributuak -->
+<!ATTLIST Saltzaileak
+          id CDATA #REQUIRED>               <!-- Saltzaile bakoitzaren identifikatzaile bakarra -->
+
+<!-- Izena — Langilearen izena -->
 <!ELEMENT Izena (#PCDATA)>
+
+<!-- Abizena — Langilearen abizena -->
 <!ELEMENT Abizena (#PCDATA)>
+
+<!-- Emaila — Langilearen posta elektronikoa -->
 <!ELEMENT Emaila (#PCDATA)>
+
+<!-- Telefonoa — Langilearen telefono zenbakia -->
 <!ELEMENT Telefonoa (#PCDATA)>
+
+<!-- Data — Langilearekin lotutako data (adibidez, kontratu data) -->
 <!ELEMENT Data (#PCDATA)>
 
+<!-- Nagusia — Langilearen nagusiaren informazioa -->
 <!ELEMENT Nagusia (IzenAbizena)>
+
+<!-- Nagusia atributuak -->
 <!ATTLIST Nagusia
-          nagusiID CDATA #IMPLIED>
+          nagusiID CDATA #IMPLIED>        <!-- Nagusiaren identifikatzailea (aukerakoa) -->
+
+<!-- IzenAbizena — Nagusiaren izena eta abizena bat eginda -->
 <!ELEMENT IzenAbizena (#PCDATA)>
 
+<!-- LanpostuDeskribapen — Langilearen lanpostuaren deskribapena -->
 <!ELEMENT LanpostuDeskribapen (#PCDATA)>
-<!ELEMENT Lanpostua EMPTY>
-<!ATTLIST Lanpostua
-          idLanpostu CDATA #REQUIRED>
 
+<!-- Lanpostua — Lanpostuaren identifikatzailea -->
+<!ELEMENT Lanpostua EMPTY>
+
+<!-- Lanpostua atributuak -->
+<!ATTLIST Lanpostua
+          idLanpostu CDATA #REQUIRED>       <!-- Lanpostu bakoitzaren identifikatzaile bakarra -->
+
+<!-- Erabiltzaile — Saltzailearen erabiltzaile izena -->
 <!ELEMENT Erabiltzaile (#PCDATA)>
+
+<!-- Pasahitza — Saltzailearen pasahitza -->
 <!ELEMENT Pasahitza (#PCDATA)>

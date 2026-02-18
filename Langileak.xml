@@ -3,17 +3,27 @@
 <Langileak xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:noNamespaceSchemaLocation="Langileak.xsd">
   <Bulegaria id="1">
-    <Izena>Selah</Izena>
-    <Abizena>Barnes</Abizena>
-    <Emaila>selah.barnes@example.com</Emaila>
-    <Telefonoa>515.123.4567</Telefonoa>
-    <Data>17/06/13</Data>
-    <Nagusia nagusiID="">
-      <IzenAbizena></IzenAbizena>
-    </Nagusia>
-    <LanpostuDeskribapen>President</LanpostuDeskribapen>
-    <Lanpostua idLanpostu="4"></Lanpostua>
-  </Bulegaria>
+  <!-- Bulegaria — Langile mota hau bulegaria da, id atributu bakarra du -->
+  <Izena>Selah</Izena>
+  <!-- Izena — Bulegariaren lehen izena -->
+  <Abizena>Barnes</Abizena>
+  <!-- Abizena — Bulegariaren abizena -->
+  <Emaila>selah.barnes@example.com</Emaila>
+  <!-- Emaila — Bulegariaren posta elektronikoa -->
+  <Telefonoa>515.123.4567</Telefonoa>
+  <!-- Telefonoa — Bulegariaren telefono zenbakia -->
+  <Data>17/06/13</Data>
+  <!-- Data — Bulegariari lotutako data (adibidez, kontratu data) -->
+  <Nagusia nagusiID="1">
+    <!-- Nagusia — Bulegariaren nagusiaren informazioa, nagusiID atributuarekin -->
+    <IzenAbizena>Selah Barnes</IzenAbizena> 
+    <!-- IzenAbizena — Nagusiaren izena eta abizena -->
+  </Nagusia>
+  <LanpostuDeskribapen>President</LanpostuDeskribapen>
+  <!-- LanpostuDeskribapen — Bulegariaren lanpostuaren deskribapena -->
+  <Lanpostua idLanpostu="4"></Lanpostua>
+  <!-- Lanpostua — Lanpostuaren identifikatzailea, hutsik geratzen da edukia gabe -->
+</Bulegaria>
 
   <Bulegaria id="2">
     <Izena>Keziaha</Izena>
@@ -695,7 +705,7 @@
     <Izena>Selah</Izena>
     <Abizena>Barnes</Abizena>
     <Emaila>selah.barnes@example.com</Emaila>
-    <Telefonoa>011.44.1344.429268</Telefonoa>
+    <Telefonoa>515.123.8078</Telefonoa>
     <Data>29/01/16</Data>
     <Nagusia nagusiID="100">
       <IzenAbizena>Fionnuala Bond</IzenAbizena>
@@ -708,7 +718,7 @@
     <Izena>Keziaha</Izena>
     <Abizena>Swanson</Abizena>
     <Emaila>keziaha.swanson@example.com</Emaila>
-    <Telefonoa>011.44.1344.429268</Telefonoa>
+    <Telefonoa>515.123.8079</Telefonoa>
     <Data>14/05/16</Data>
     <Nagusia nagusiID="100">
       <IzenAbizena>Fionnuala Bond</IzenAbizena>
@@ -721,7 +731,7 @@
     <Izena>Fionnuala</Izena>
     <Abizena>Bond</Abizena>
     <Emaila>fionnuala.bond@example.com</Emaila>
-    <Telefonoa>011.44.1344.429268</Telefonoa>
+    <Telefonoa>515.123.8080</Telefonoa>
     <Data>24/03/16</Data>
     <Nagusia nagusiID="100">
       <IzenAbizena>Fionnuala Bond</IzenAbizena>
@@ -1004,23 +1014,33 @@
   </Bulegaria>
 
  <Saltzaileak id="50">
-    <Izena>Selah</Izena>
-    <Abizena>Barnes</Abizena>
-    <Emaila>selah.barnes@example.com</Emaila>
-    <Telefonoa>011.44.1344.429268</Telefonoa>
-    <Data>24/03/16</Data>
-    <Nagusia nagusiID="15">
-      <IzenAbizena>Geraldine Schneider</IzenAbizena>
-    </Nagusia>
-    <Erabiltzaile>sbarnes</Erabiltzaile>
-    <Pasahitza>sbarnes123</Pasahitza>
-  </Saltzaileak>
+  <!-- Saltzaileak — Langile mota hau saltzailea da, id atributu bakarra du -->
+  <Izena>Selah</Izena>
+  <!-- Izena — Saltzailearen lehen izena -->
+  <Abizena>Barnes</Abizena>
+  <!-- Abizena — Saltzailearen abizena -->
+  <Emaila>selah.barnes@example.com</Emaila>
+  <!-- Emaila — Saltzailearen posta elektronikoa -->
+  <Telefonoa>515.123.8050</Telefonoa>
+  <!-- Telefonoa — Saltzailearen telefono zenbakia -->
+  <Data>24/03/16</Data>
+  <!-- Data — Saltzaileari lotutako data (adibidez, kontratu data) -->
+  <Nagusia nagusiID="15">
+    <!-- Nagusia — Saltzailearen nagusiaren informazioa, nagusiID atributuarekin -->
+    <IzenAbizena>Geraldine Schneider</IzenAbizena>
+    <!-- IzenAbizena — Nagusiaren izena eta abizena -->
+  </Nagusia>
+  <Erabiltzaile>sbarnes</Erabiltzaile>
+  <!-- Erabiltzaile — Saltzailearen sistema barruko erabiltzaile izena -->
+  <Pasahitza>sbarnes123</Pasahitza>
+  <!-- Pasahitza — Saltzailearen kontuaren pasahitza -->
+</Saltzaileak>
 
   <Saltzaileak id="51">
     <Izena>Keziaha</Izena>
     <Abizena>Swanson</Abizena>
     <Emaila>keziaha.swanson@example.com</Emaila>
-    <Telefonoa>011.44.1344.429269</Telefonoa>
+    <Telefonoa>515.123.8051</Telefonoa>
     <Data>20/05/16</Data>
     <Nagusia nagusiID="15">
       <IzenAbizena>Geraldine Schneider</IzenAbizena>
@@ -1033,7 +1053,7 @@
     <Izena>Fionnuala</Izena>
     <Abizena>Bond</Abizena>
     <Emaila>fionnuala.bond@example.com</Emaila>
-    <Telefonoa>011.44.1344.429033</Telefonoa>
+    <Telefonoa>515.123.8052</Telefonoa>
     <Data>11/08/16</Data>
     <Nagusia nagusiID="15">
       <IzenAbizena>Geraldine Schneider</IzenAbizena>
@@ -1046,7 +1066,7 @@
     <Izena>Selah</Izena>
     <Abizena>Barnes</Abizena>
     <Emaila>selah.barnes@example.com</Emaila>
-    <Telefonoa>011.44.1344.467268</Telefonoa>
+    <Telefonoa>515.123.8053</Telefonoa>
     <Data>13/12/16</Data>
     <Nagusia nagusiID="15">
       <IzenAbizena>Geraldine Schneider</IzenAbizena>
@@ -1059,7 +1079,7 @@
     <Izena>Keziaha</Izena>
     <Abizena>Swanson</Abizena>
     <Emaila>keziaha.swanson@example.com</Emaila>
-    <Telefonoa>011.44.1344.498718</Telefonoa>
+    <Telefonoa>515.123.8054</Telefonoa>
     <Data>25/03/16</Data>
     <Nagusia nagusiID="15">
       <IzenAbizena>Geraldine Schneider</IzenAbizena>
@@ -1072,7 +1092,7 @@
     <Izena>Fionnuala</Izena>
     <Abizena>Bond</Abizena>
     <Emaila>fionnuala.bond@example.com</Emaila>
-    <Telefonoa>011.44.1344.498717</Telefonoa>
+    <Telefonoa>515.123.8055</Telefonoa>
     <Data>17/01/16</Data>
     <Nagusia nagusiID="15">
       <IzenAbizena>Geraldine Schneider</IzenAbizena>
@@ -1085,7 +1105,7 @@
     <Izena>Evie</Izena>
     <Abizena>Harrison</Abizena>
     <Emaila>evie.harrison@example.com</Emaila>
-    <Telefonoa>011.44.1344.498716</Telefonoa>
+    <Telefonoa>515.123.8056</Telefonoa>
     <Data>01/02/16</Data>
     <Nagusia nagusiID="15">
       <IzenAbizena>Geraldine Schneider</IzenAbizena>
@@ -1098,7 +1118,7 @@
     <Izena>Scarlett</Izena>
     <Abizena>Gibson</Abizena>
     <Emaila>scarlett.gibson@example.com</Emaila>
-    <Telefonoa>011.44.1344.429261</Telefonoa>
+    <Telefonoa>515.123.8057</Telefonoa>
     <Data>20/03/16</Data>
     <Nagusia nagusiID="15">
       <IzenAbizena>Geraldine Schneider</IzenAbizena>
@@ -1111,7 +1131,7 @@
     <Izena>Ruby</Izena>
     <Abizena>Mcdonald</Abizena>
     <Emaila>ruby.mcdonald@example.com</Emaila>
-    <Telefonoa>011.44.1344.429262</Telefonoa>
+    <Telefonoa>515.123.8058</Telefonoa>
     <Data>14/06/16</Data>
     <Nagusia nagusiID="15">
       <IzenAbizena>Geraldine Schneider</IzenAbizena>
@@ -1124,7 +1144,7 @@
     <Izena>Selah</Izena>
     <Abizena>Barnes</Abizena>
     <Emaila>selah.barnes@example.com</Emaila>
-    <Telefonoa>011.44.1344.429263</Telefonoa>
+    <Telefonoa>515.123.8059</Telefonoa>
     <Data>17/05/16</Data>
     <Nagusia nagusiID="15">
       <IzenAbizena>Geraldine Schneider</IzenAbizena>
@@ -1137,7 +1157,7 @@
     <Izena>Keziaha</Izena>
     <Abizena>Swanson</Abizena>
     <Emaila>keziaha.swanson@example.com</Emaila>
-    <Telefonoa>011.44.1344.429264</Telefonoa>
+    <Telefonoa>515.123.8060</Telefonoa>
     <Data>01/10/16</Data>
     <Nagusia nagusiID="15">
       <IzenAbizena>Geraldine Schneider</IzenAbizena>
@@ -1150,7 +1170,7 @@
     <Izena>Fionnuala</Izena>
     <Abizena>Bond</Abizena>
     <Emaila>fionnuala.bond@example.com</Emaila>
-    <Telefonoa>011.44.1344.429265</Telefonoa>
+    <Telefonoa>515.123.8061</Telefonoa>
     <Data>31/03/16</Data>
     <Nagusia nagusiID="15">
       <IzenAbizena>Geraldine Schneider</IzenAbizena>
@@ -1163,7 +1183,7 @@
     <Izena>Selah</Izena>
     <Abizena>Barnes</Abizena>
     <Emaila>selah.barnes@example.com</Emaila>
-    <Telefonoa>011.44.1344.429266</Telefonoa>
+    <Telefonoa>515.123.8062</Telefonoa>
     <Data>30/01/16</Data>
     <Nagusia nagusiID="15">
       <IzenAbizena>Geraldine Schneider</IzenAbizena>
@@ -1176,7 +1196,7 @@
     <Izena>Keziaha</Izena>
     <Abizena>Swanson</Abizena>
     <Emaila>keziaha.swanson@example.com</Emaila>
-    <Telefonoa>011.44.1344.429267</Telefonoa>
+    <Telefonoa>515.123.8063</Telefonoa>
     <Data>07/04/16</Data>
     <Nagusia nagusiID="15">
       <IzenAbizena>Geraldine Schneider</IzenAbizena>
@@ -1189,7 +1209,7 @@
     <Izena>Fionnuala</Izena>
     <Abizena>Bond</Abizena>
     <Emaila>fionnuala.bond@example.com</Emaila>
-    <Telefonoa>011.44.1344.429260</Telefonoa>
+    <Telefonoa>515.123.8064</Telefonoa>
     <Data>10/05/16</Data>
     <Nagusia nagusiID="15">
       <IzenAbizena>Geraldine Schneider</IzenAbizena>
@@ -1202,7 +1222,7 @@
     <Izena>Selah</Izena>
     <Abizena>Barnes</Abizena>
     <Emaila>selah.barnes@example.com</Emaila>
-    <Telefonoa>011.44.1345.429268</Telefonoa>
+    <Telefonoa>515.123.8065</Telefonoa>
     <Data>07/03/16</Data>
     <Nagusia nagusiID="15">
       <IzenAbizena>Geraldine Schneider</IzenAbizena>
@@ -1215,7 +1235,7 @@
     <Izena>Keziaha</Izena>
     <Abizena>Swanson</Abizena>
     <Emaila>keziaha.swanson@example.com</Emaila>
-    <Telefonoa>011.44.1345.429269</Telefonoa>
+    <Telefonoa>515.123.8066</Telefonoa>
     <Data>23/05/16</Data>
     <Nagusia nagusiID="15">
       <IzenAbizena>Geraldine Schneider</IzenAbizena>
@@ -1228,7 +1248,7 @@
     <Izena>Fionnuala</Izena>
     <Abizena>Bond</Abizena>
     <Emaila>fionnuala.bond@example.com</Emaila>
-    <Telefonoa>011.44.1345.429033</Telefonoa>
+    <Telefonoa>515.123.8067</Telefonoa>
     <Data>04/11/16</Data>
     <Nagusia nagusiID="15">
       <IzenAbizena>Geraldine Schneider</IzenAbizena>
@@ -1241,7 +1261,7 @@
     <Izena>Selah</Izena>
     <Abizena>Barnes</Abizena>
     <Emaila>selah.barnes@example.com</Emaila>
-    <Telefonoa>011.44.1345.467268</Telefonoa>
+    <Telefonoa>515.123.8068</Telefonoa>
     <Data>24/01/16</Data>
     <Nagusia nagusiID="15">
       <IzenAbizena>Geraldine Schneider</IzenAbizena>
@@ -1254,7 +1274,7 @@
     <Izena>Keziaha</Izena>
     <Abizena>Swanson</Abizena>
     <Emaila>keziaha.swanson@example.com</Emaila>
-    <Telefonoa>011.44.1345.498718</Telefonoa>
+    <Telefonoa>515.123.8069</Telefonoa>
     <Data>21/04/16</Data>
     <Nagusia nagusiID="15">
       <IzenAbizena>Geraldine Schneider</IzenAbizena>
@@ -1267,7 +1287,7 @@
     <Izena>Selah</Izena>
     <Abizena>Barnes</Abizena>
     <Emaila>selah.barnes@example.com</Emaila>
-    <Telefonoa>011.44.1346.229268</Telefonoa>
+    <Telefonoa>515.123.8070</Telefonoa>
     <Data>11/03/16</Data>
     <Nagusia nagusiID="15">
       <IzenAbizena>Geraldine Schneider</IzenAbizena>
@@ -1276,11 +1296,11 @@
     <Pasahitza>sbarnes123</Pasahitza>
   </Saltzaileak>
 
- <Saltzaileak id="71">
+  <Saltzaileak id="71">
     <Izena>Keziaha</Izena>
     <Abizena>Swanson</Abizena>
     <Emaila>keziaha.swanson@example.com</Emaila>
-    <Telefonoa>011.44.1346.329269</Telefonoa>
+    <Telefonoa>515.123.8071</Telefonoa>
     <Data>13/12/16</Data>
     <Nagusia nagusiID="15">
       <IzenAbizena>Geraldine Schneider</IzenAbizena>
@@ -1293,7 +1313,7 @@
     <Izena>Fionnuala</Izena>
     <Abizena>Bond</Abizena>
     <Emaila>fionnuala.bond@example.com</Emaila>
-    <Telefonoa>011.44.1346.529033</Telefonoa>
+    <Telefonoa>515.123.8072</Telefonoa>
     <Data>30/01/16</Data>
     <Nagusia nagusiID="15">
       <IzenAbizena>Geraldine Schneider</IzenAbizena>
@@ -1306,7 +1326,7 @@
     <Izena>Selah</Izena>
     <Abizena>Barnes</Abizena>
     <Emaila>selah.barnes@example.com</Emaila>
-    <Telefonoa>011.44.1346.667268</Telefonoa>
+    <Telefonoa>515.123.8073</Telefonoa>
     <Data>21/05/16</Data>
     <Nagusia nagusiID="15">
       <IzenAbizena>Geraldine Schneider</IzenAbizena>
@@ -1319,7 +1339,7 @@
     <Izena>Keziaha</Izena>
     <Abizena>Swanson</Abizena>
     <Emaila>keziaha.swanson@example.com</Emaila>
-    <Telefonoa>011.44.1346.798718</Telefonoa>
+    <Telefonoa>515.123.8074</Telefonoa>
     <Data>01/10/16</Data>
     <Nagusia nagusiID="15">
       <IzenAbizena>Geraldine Schneider</IzenAbizena>
@@ -1332,7 +1352,7 @@
     <Izena>Fionnuala</Izena>
     <Abizena>Bond</Abizena>
     <Emaila>fionnuala.bond@example.com</Emaila>
-    <Telefonoa>011.44.1346.898717</Telefonoa>
+    <Telefonoa>515.123.8075</Telefonoa>
     <Data>14/06/16</Data>
     <Nagusia nagusiID="15">
       <IzenAbizena>Geraldine Schneider</IzenAbizena>
@@ -1345,7 +1365,7 @@
     <Izena>Selah</Izena>
     <Abizena>Barnes</Abizena>
     <Emaila>selah.barnes@example.com</Emaila>
-    <Telefonoa>011.44.1346.998716</Telefonoa>
+    <Telefonoa>515.123.8076</Telefonoa>
     <Data>24/03/16</Data>
     <Nagusia nagusiID="15">
       <IzenAbizena>Geraldine Schneider</IzenAbizena>
@@ -1358,7 +1378,7 @@
     <Izena>Keziaha</Izena>
     <Abizena>Swanson</Abizena>
     <Emaila>keziaha.swanson@example.com</Emaila>
-    <Telefonoa>011.44.1346.129261</Telefonoa>
+    <Telefonoa>515.123.8077</Telefonoa>
     <Data>20/05/16</Data>
     <Nagusia nagusiID="15">
       <IzenAbizena>Geraldine Schneider</IzenAbizena>
@@ -1371,7 +1391,7 @@
     <Izena>Fionnuala</Izena>
     <Abizena>Bond</Abizena>
     <Emaila>fionnuala.bond@example.com</Emaila>
-    <Telefonoa>011.44.1346.229262</Telefonoa>
+    <Telefonoa>515.123.8078</Telefonoa>
     <Data>11/08/16</Data>
     <Nagusia nagusiID="15">
       <IzenAbizena>Geraldine Schneider</IzenAbizena>
@@ -1384,7 +1404,7 @@
     <Izena>Selah</Izena>
     <Abizena>Barnes</Abizena>
     <Emaila>selah.barnes@example.com</Emaila>
-    <Telefonoa>011.44.1346.329263</Telefonoa>
+    <Telefonoa>515.123.8079</Telefonoa>
     <Data>13/12/16</Data>
     <Nagusia nagusiID="15">
       <IzenAbizena>Geraldine Schneider</IzenAbizena>
@@ -1393,11 +1413,11 @@
     <Pasahitza>sbarnes123</Pasahitza>
   </Saltzaileak>
 
- <Saltzaileak id="80">
+  <Saltzaileak id="80">
     <Izena>Keziaha</Izena>
     <Abizena>Swanson</Abizena>
     <Emaila>keziaha.swanson@example.com</Emaila>
-    <Telefonoa>011.44.1346.429264</Telefonoa>
+    <Telefonoa>515.123.8080</Telefonoa>
     <Data>25/03/16</Data>
     <Nagusia nagusiID="15">
       <IzenAbizena>Geraldine Schneider</IzenAbizena>

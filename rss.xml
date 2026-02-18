@@ -1,34 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<!-- RSS feed-a definitzen du, 2.0 bertsioan, eta Atom izen espazio bat gehitzen du -->
   <channel>
+    <!-- RSS kanal nagusia, albisteak edo edukien multzoa biltzen du -->
+
     <title>GAME STOP BERRIAK</title>
+    <!-- Kanalaren izenburua, RSS irakurgailuetan agertuko dena -->
+
     <link>https://hmerinoc25-cloud.github.io/Erronka.2/index.html</link>
+    <!-- Kanalarekin lotutako webgunea edo hasierako orrialdea -->
+
     <description>Gaming munduko berrikuntzak eta Santurtziko albiste teknologikoak.</description>
+    <!-- Kanalaren deskribapena, zer nolako edukia eskaintzen duen azaltzen du -->
+
     <language>eu</language>
+    <!-- Kanalaren hizkuntza, hemen euskara adierazten du -->
+
     <atom:link href="https://hmerinoc25-cloud.github.io/Erronka.2/rss.xml" rel="self" type="application/rss+xml" />
+    <!-- RSS feed honen URI bera adierazten du Atom estandar bidez -->
 
     <item>
+      <!-- Albiste edo elementu bakar bat RSS kanaleko -->
+
       <title>Epic Games-en zerbitzariak erorita: 24 ordu joko gabe</title>
+      <!-- Albistearen izenburua -->
+
       <link>https://hmerinoc25-cloud.github.io/Erronka.2/azkenberriak.html</link>
+      <!-- Albiste horretara eramaten duen esteka -->
+
       <description>Fortnite eta Rocket League mundu osoan itzali dira arazo tekniko baten ondorioz.</description>
+      <!-- Albistearen laburpena edo deskribapena -->
+
       <pubDate>Wed, 11 Feb 2026 12:15:00 +0100</pubDate>
+      <!-- Albistearen argitaratze data eta ordua -->
+
       <guid isPermaLink="false">noticia-epic-gamestop-v7</guid>
+      <!-- Albistearen identifikatzaile bakarra (permaLink ez dena) -->
     </item>
 
     <item>
+      <!-- Bigarren albistea -->
+
       <title>Proiektu teknologiko berria Santurtzin - AIA S.A.</title>
+      <!-- Albistearen izenburua -->
+
       <link>https://hmerinoc25-cloud.github.io/Erronka.2/jasangarritasuna.html</link>
+      <!-- Albiste horretara eramaten duen esteka -->
+
       <description>AIA S.A. enpresak berrikuntza jasangarria bultzatuko du gure herrian.</description>
+      <!-- Albistearen laburpena -->
+
       <pubDate>Wed, 11 Feb 2026 12:10:00 +0100</pubDate>
+      <!-- Argitaratze data eta ordua -->
+
       <guid isPermaLink="false">noticia-aia-gamestop-v7</guid>
+      <!-- Albistearen identifikatzaile bakarra -->
     </item>
 
     <item>
+      <!-- Hirugarren albistea -->
+
       <title>GTA 6-ren garapena normaltasunera itzuli da</title>
+      <!-- Albistearen izenburua -->
+
       <link>https://hmerinoc25-cloud.github.io/Erronka.2/bideojokoak.html</link>
+      <!-- Albiste horretara eramaten duen esteka -->
+
       <description>Rockstar Northen bulegoak martxan daude berriro istripu txiki baten ostean.</description>
+      <!-- Albistearen laburpena -->
+
       <pubDate>Wed, 11 Feb 2026 12:05:00 +0100</pubDate>
+      <!-- Argitaratze data eta ordua -->
+
       <guid isPermaLink="false">noticia-gta6-gamestop-v7</guid>
+      <!-- Albistearen identifikatzaile bakarra -->
     </item>
+
   </channel>
 </rss>
+<!-- RSS feed-aren amaiera -->
